@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — LegalPDF</title>
+  <meta name="description" content="Contact LegalPDF for support, subscription setup, or feedback." />
+  <meta name="theme-color" content="#1e3a8a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">§</span>LegalPDF</a>
+      <nav class="nav" id="nav">
+        <a href="tools.html">Tools</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tools.html" class="btn btn-primary btn-sm">Open Tools</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="section">
+    <div class="container" style="max-width: 680px;">
+      <div class="section-head">
+        <h1 style="font-size: var(--fs-4xl);">Get in touch</h1>
+        <p>For support, subscription setup, or feedback. We respond personally.</p>
+      </div>
+
+      <!-- 
+        ⚠️ REPLACE "YOUR_FORM_ID" below with your Formspree form ID.
+        Get it free at https://formspree.io → New Form → enter saan63238@gmail.com
+      -->
+      <form 
+        class="contact-form reveal" 
+        id="contactForm" 
+        action="https://formspree.io/f/YOUR_FORM_ID" 
+        method="POST">
+
+        <div class="tool-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+        </div>
+
+        <div class="tool-field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+
+        <div class="tool-field">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="">Select a topic</option>
+            <option value="General question">General question</option>
+            <option value="Subscription (Pro)">Subscription — Pro plan</option>
+            <option value="Subscription (Firm)">Subscription — Firm plan</option>
+            <option value="Technical support">Technical support</option>
+            <option value="Feedback">Feedback</option>
+          </select>
+        </div>
+
+        <div class="tool-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="How can we help?"></textarea>
+        </div>
+
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="tool-status" id="contactStatus"></div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg" id="contactSubmit">Send message</button>
+      </form>
+
+      <div class="tool-note" style="margin-top: var(--s-8); text-align: center;">
+        Prefer email? Write directly to <a href="mailto:saan63238@gmail.com">saan63238@gmail.com</a>.
+      </div>
+    </div>
+  </section>  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year">2025</span> LegalPDF. All rights reserved.</span>
+        <span><a href="tools.html">Tools</a> · <a href="pricing.html">Pricing</a> · <a href="faq.html">FAQ</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

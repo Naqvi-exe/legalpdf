@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — LegalPDF</title>
+  <meta name="description" content="LegalPDF was built around a simple principle: legal documents should never leave the client's device." />
+  <meta name="theme-color" content="#1e3a8a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">§</span>LegalPDF</a>
+      <nav class="nav" id="nav">
+        <a href="tools.html">Tools</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tools.html" class="btn btn-primary btn-sm">Open Tools</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="section">
+    <div class="container" style="max-width: 760px;">
+      <div class="section-head reveal" style="text-align: left;">
+        <h1 style="font-size: var(--fs-4xl); margin-bottom: var(--s-4);">About LegalPDF</h1>
+        <p style="font-size: var(--fs-lg); color: var(--muted);">Built around one principle: legal documents should never leave the client's device.</p>
+      </div>
+
+      <div class="reveal" style="margin-top: var(--s-12);">
+        <h2 style="font-size: var(--fs-2xl); margin-bottom: var(--s-4);">The problem</h2>
+        <p style="margin-bottom: var(--s-6);">Most online PDF tools require you to upload your file to a server you do not control. For a merger agreement, a client affidavit, or a medical record, this is not acceptable. Attorneys and paralegals routinely face a choice between confidentiality and convenience — and often choose the wrong one because the right tool does not exist.</p>
+
+        <h2 style="font-size: var(--fs-2xl); margin: var(--s-8) 0 var(--s-4);">Our approach</h2>
+        <p style="margin-bottom: var(--s-6);">LegalPDF does not operate a document server. Every tool runs as JavaScript in your browser. When you open a PDF, it is read from your local disk into your browser's memory. Processing happens there. The output is downloaded directly back to your device. At no point does any file, in any form, reach our infrastructure — because we do not have any infrastructure to receive it.</p>
+
+        <h2 style="font-size: var(--fs-2xl); margin: var(--s-8) 0 var(--s-4);">What we do and do not claim</h2>
+        <p style="margin-bottom: var(--s-6);">We state our limitations openly. Our redaction tool covers text and strips metadata; it does not perform forensic-grade irreversible redaction, and we say so on the tool page itself. Our optimization tool reduces size when possible; it does not guarantee a fixed percentage, and we say so too. Trust in legal tooling is built on accuracy, not on overstated capability.</p>
+
+        <h2 style="font-size: var(--fs-2xl); margin: var(--s-8) 0 var(--s-4);">Who it is for</h2>
+        <p style="margin-bottom: var(--s-6);">Solo practitioners, small firms, paralegals, and legal consultants who need reliable PDF handling without compromising client confidentiality. The tools are designed for the workflow of a working legal professional — merge exhibits, extract relevant pages, cover sensitive names, apply Bates numbers before discovery production.</p>
+
+        <h2 style="font-size: var(--fs-2xl); margin: var(--s-8) 0 var(--s-4);">What comes next</h2>
+        <p style="margin-bottom: var(--s-6);">Our roadmap includes true irreversible redaction with page rasterization, OCR-assisted sensitive-text detection, and PDF comparison for document review. If you use the tools and have suggestions, we would like to hear from you.</p>
+
+        <div class="final-cta" style="margin-top: var(--s-12);">
+          <h2 style="font-size: var(--fs-2xl); margin-bottom: var(--s-3);">Questions or feedback?</h2>
+          <p style="color: #c7d2fe; margin-bottom: var(--s-6);">We read every message and respond personally.</p>
+          <a href="contact.html" class="btn btn-primary">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year">2025</span> LegalPDF. All rights reserved.</span>
+        <span><a href="tools.html">Tools</a> · <a href="pricing.html">Pricing</a> · <a href="faq.html">FAQ</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

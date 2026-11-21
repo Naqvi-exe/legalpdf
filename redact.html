@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redact PDF — LegalPDF</title>
+  <meta name="description" content="Cover sensitive text and strip metadata. Processed entirely in your browser." />
+  <meta name="theme-color" content="#1e3a8a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">§</span>LegalPDF</a>
+      <nav class="nav" id="nav">
+        <a href="tools.html">Tools</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tools.html" class="btn btn-primary btn-sm">All Tools</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+  <a href="tools.html" class="back-link" aria-label="Back to Tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to Tools</a>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1 style="font-size: var(--fs-4xl);">Redact PDF</h1>
+        <p>Cover each occurrence of specific text with a solid black rectangle. Metadata is stripped.</p>
+      </div>
+
+      <div class="tool-panel reveal">
+        <div class="tool-dropzone" id="redactDropzone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:48px;height:48px;margin:0 auto var(--s-4);color:var(--brand);">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+          </svg>
+          <p class="tool-dropzone-title">Select a PDF to redact</p>
+          <p class="tool-dropzone-sub">Single file. Processed locally.</p>
+          <input type="file" id="redactInput" accept="application/pdf" hidden />
+          <button class="btn btn-primary" onclick="document.getElementById('redactInput').click()">Choose file</button>
+        </div>
+
+        <div class="tool-field">
+          <label for="redactTerm">Text to redact</label>
+          <input type="text" id="redactTerm" placeholder="e.g. John Smith or 123-45-6789" />
+        </div>
+
+        <div class="tool-status" id="redactStatus"></div>
+        <div class="tool-actions">
+          <button class="btn btn-primary" id="redactRun" disabled>Redact and download</button>
+          <button class="btn btn-ghost" id="redactReset" disabled>Reset</button>
+        </div>
+
+        <div class="tool-warning">
+          <strong>Important limitation:</strong> This tool covers the visible text with a black rectangle and strips metadata. It does not remove the underlying text layer. For court filings requiring certified irreversible redaction, verify the output with dedicated forensic tools before submitting.
+        </div>
+      </div>
+    </div>
+  </section>  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year">2025</span> LegalPDF. All rights reserved.</span>
+        <span><a href="tools.html">Back to tools</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

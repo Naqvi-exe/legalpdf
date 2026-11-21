@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optimize PDF — LegalPDF</title>
+  <meta name="description" content="Remove unused objects and strip metadata to reduce PDF file size." />
+  <meta name="theme-color" content="#1e3a8a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">§</span>LegalPDF</a>
+      <nav class="nav" id="nav">
+        <a href="tools.html">Tools</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tools.html" class="btn btn-primary btn-sm">All Tools</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+  <a href="tools.html" class="back-link" aria-label="Back to Tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to Tools</a>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1 style="font-size: var(--fs-4xl);">Optimize PDF</h1>
+        <p>Remove unused objects, strip metadata, and re-save the document more compactly.</p>
+      </div>
+
+      <div class="tool-panel reveal">
+        <div class="tool-dropzone" id="compressDropzone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:48px;height:48px;margin:0 auto var(--s-4);color:var(--brand);">
+            <path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/>
+          </svg>
+          <p class="tool-dropzone-title">Select a PDF to optimize</p>
+          <p class="tool-dropzone-sub">Single file. Processed locally.</p>
+          <input type="file" id="compressInput" accept="application/pdf" hidden />
+          <button class="btn btn-primary" onclick="document.getElementById('compressInput').click()">Choose file</button>
+        </div>
+
+        <div class="tool-status" id="compressStatus"></div>
+        <div class="tool-actions">
+          <button class="btn btn-primary" id="compressRun" disabled>Optimize and download</button>
+          <button class="btn btn-ghost" id="compressReset" disabled>Reset</button>
+        </div>
+
+        <div class="tool-note">
+          <strong>Honest note:</strong> This tool removes unused objects and strips metadata. Size reduction depends on the original document — we do not guarantee a specific percentage.
+        </div>
+      </div>
+    </div>
+  </section>  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year">2025</span> LegalPDF. All rights reserved.</span>
+        <span><a href="tools.html">Back to tools</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

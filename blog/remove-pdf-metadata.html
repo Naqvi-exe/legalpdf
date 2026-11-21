@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Removing PDF Metadata Before Sharing Legal Documents — LegalPDF</title>
+  <meta name="description" content="Learn how to strip author, software, and edit history from PDFs." />
+  <meta name="theme-color" content="#1e3a8a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark">§</span>LegalPDF</a>
+      <nav class="nav" id="nav">
+        <a href="../tools.html">Tools</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../tools.html" class="btn btn-primary btn-sm">Open Tools</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="section">
+    <div class="container" style="max-width: 720px;">
+      <a href="index.html" class="back-link" aria-label="Back to Blog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to Blog</a>
+      
+      <h1 style="font-size: var(--fs-4xl); margin-bottom: var(--s-3); color: var(--ink);">Removing PDF Metadata Before Sharing Legal Documents</h1>
+      <p style="font-size: var(--fs-sm); color: var(--muted); margin-bottom: var(--s-8);">Published October 8, 2025 · 4 min read</p>
+
+      <div style="line-height: 1.8; color: var(--ink-soft); font-size: var(--fs-base);">
+        <p style="margin-bottom: var(--s-4);">When you create or edit a PDF, the software embeds a hidden layer of information known as metadata. This data is not visible on the page, but it travels with the file wherever it goes.</p>
+
+        <h2 style="font-size: var(--fs-2xl); margin: var(--s-8) 0 var(--s-3); color: var(--ink);">What is inside PDF Metadata?</h2>
+        <p style="margin-bottom: var(--s-4);">Depending on the software used, a PDF may contain:</p>
+        <ul style="margin-bottom: var(--s-4); padding-left: var(--s-6); list-style-type: disc;">
+          <li style="margin-bottom: var(--s-2);">The full name of the author (e.g., the lawyer or paralegal who drafted it).</li>
+          <li style="margin-bottom: var(--s-2);">The name of the original file before conversion (e.g., <code>Draft_Settlement_Offer_v3.docx</code>).</li>
+          <li style="margin-bottom: var(--s-2);">The software used to create it (e.g., Microsoft Word, Adobe Acrobat).</li>
+          <li style="margin-bottom: var(--s-2);">Creation and modification dates.</li>
+        </ul>
+
+        <h2 style="font-size: var(--fs-2xl); margin: var(--s-8) 0 var(--s-3); color: var(--ink);">Why is it a risk?</h2>
+        <p style="margin-bottom: var(--s-4);">Metadata can unintentionally reveal internal information. For example, sending a document to opposing counsel that still contains the original author's name or the internal file path could compromise your firm's drafting process or reveal the identity of a client contact.</p>
+
+        <h2 style="font-size: var(--fs-2xl); margin: var(--s-8) 0 var(--s-3); color: var(--ink);">How to Strip Metadata</h2>
+        <p style="margin-bottom: var(--s-4);">You can remove this data using specialized tools or standard PDF "Sanitization" features in Adobe Acrobat. If you need a quick, browser-based method, you can use our <strong>Optimize</strong> tool.</p>
+        <p style="margin-bottom: var(--s-4);">Our tool loads the PDF, clears the document properties (Title, Author, Subject, Keywords), and saves a fresh version with empty metadata fields, all locally in your browser.</p>
+
+        <div class="tool-note" style="margin-top: var(--s-8);">
+          <strong>Tool:</strong> Use our <a href="../compress.html">Optimize PDF tool</a> to strip metadata and clean file properties without uploading.
+        </div>
+      </div>
+    </div>
+  </section>  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="year">2025</span> LegalPDF. All rights reserved.</span>
+        <span><a href="index.html">Blog</a> · <a href="../tools.html">Tools</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>
